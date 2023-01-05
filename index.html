@@ -10,20 +10,22 @@
 <body>
     <div class="header">
         Hocus Pocus
-        <button class="add_category">Add Category</button>
-        <input class="category_textbox" type="text" placeholder="Enter Category Name">
+        <button id="add_category">
+            Add Category
+            <div class="tooltip">
+                ADD 
+            </div>
+        </button>
+        
+        <input id="category_textbox" type="text" placeholder="Enter Category Name">
     </div>
-    <div style="
-        background-color: #e0afa0;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,.2);
-        height: 6px;
-    "></div>
     <br>
-    <div class="category_flexbox">
+    <div id="category_flexbox">
+        <!-- TEMPLATE FOR CATEGORY CONTAINER
         <div class="category_container">
-            <div class="category_name">"CATEGORY NAME"</div>
+            <div class="category_name">"CATEGORY NAME"
+                <button class="remove_category">-</button>
+            </div>
             <div class="task_inputs">
                 <input class="task_textbox" type="text" placeholder="Enter Task Name">
                 <button class="add_task">+</button>
@@ -45,52 +47,10 @@
                 <button class="remove_task">-</button>
             </div>
         </div>
-        <div class="category_container">
-            <div class="category_name">"CATEGORY NAME"</div>
-            <div class="task_inputs">
-                <input class="task_textbox" type="text" placeholder="Enter Task Name">
-                <button class="add_task">+</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-        </div>
-        <div class="category_container">
-            <div class="category_name">"CATEGORY NAME"</div>
-            <div class="task_inputs">
-                <input class="task_textbox" type="text" placeholder="Enter Task Name">
-                <button class="add_task">+</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-            <div class="task">
-                <input type="checkbox"> <div class="task_name">task</div>
-                <button class="remove_task">-</button>
-            </div>
-        </div>
+        -->
     </div>
 </body>
+
+<script src="main.js"></script>
+
 </html>
