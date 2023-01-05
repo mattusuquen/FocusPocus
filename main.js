@@ -219,5 +219,6 @@ function toggleTask(event){
     let task = category.tasks.find(task => task.id === taskId);
 
     setTaskStatus(task,checkbox.checked);
+    
     render();
 }
